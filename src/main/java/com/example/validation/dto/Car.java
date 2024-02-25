@@ -1,9 +1,16 @@
-package org.example.dto;
+package com.example.validation.dto;
+
+import jakarta.validation.constraints.NotBlank;
 
 public class Car {
 
+    @NotBlank
     private String name;
+
+    @NotBlank
     private String carNumber;
+
+    @NotBlank
     private String type;
 
     public String getName() {
